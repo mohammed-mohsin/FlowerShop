@@ -1,0 +1,284 @@
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: lato-black;
+  src: url(../fonts/Lato/Lato-Black.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: lato;
+}
+
+section {
+  margin-top: 128px;
+}
+
+.btn {
+  padding: 20px 40px;
+  background-color: #e55473;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.btn-primary {
+  background-color: #e55473;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  border: 2px solid #e55473;
+  color: #e55473;
+  background-color: transparent;
+}
+
+.hero-section {
+  margin-top: 0;
+  background-color: rgba(229, 84, 115, 0.1);
+}
+
+.container {
+  margin: 0 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .container .content {
+  padding-right: 100px;
+}
+
+.content {
+  margin-bottom: 16px;
+}
+
+.section-heading {
+  font-family: lato-black;
+  color: #272727;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.section-pera {
+  font-size: 18px;
+  color: rgba(39, 39, 39, 0.6);
+  line-height: 30px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.hero-section .container .section-heading {
+  text-align: left;
+  font-size: 80px;
+}
+
+.hero-section .container .section-pera {
+  text-align: left;
+}
+
+/* Feature */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 300px 300px 0px 0px;
+  width: 464px;
+  height: 538px;
+  margin: 24px 24px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.c1 {
+  background: rgba(167, 33, 98, 0.15);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.c2 {
+  background: rgba(5, 151, 160, 0.15);
+}
+
+.c3 {
+  background: rgba(71, 125, 17, 0.15);
+}
+
+.name {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Services */
+
+.service .container {}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin: 0 80px; */
+  background-color: rgba(39, 39, 39, 0.05);
+  padding: 0 136px;
+}
+
+.single-service {
+  display: flex;
+  flex-direction: column;
+  /* margin: 96px 40px 96px 96px; */
+  padding: 80px 40px;
+  align-items: center;
+}
+
+.single-service p {
+  margin-top: 24px;
+  font-size: 24px;
+  color: rgba(39, 39, 39, 0.8);
+}
+
+.sale {
+  background-color: rgba(229, 84, 115, 0.05);
+}
+
+.sale .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sale .content .section-heading {
+  font: size 40px;
+}
+
+.t-primary {
+  color: #e55473;
+}
+
+.sale .image img {
+  padding: 96px 0;
+  margin-left: 150px;
+}
+
+.social .single-card {
+  height: 396px;
+  width: 342px;
+  margin-right: 24px;
+  margin-top: 48px;
+  position: relative;
+}
+
+.social .single-card .image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  /* background-color: rgba(39, 39, 39, 0.05); */
+  background-color: red;
+  background-color: #272727;
+}
+
+.social .single-card:hover .overlay {
+  opacity: 0.5;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+/* News Letter */
+
+.news-letter .container {
+  background-image: url(../Flower_Asset/Rectangle9.png);
+}
+
+.news-letter .container .content {
+  padding: 120px 0;
+}
+.news-letter .container .content .letter-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.news-letter .container .content .letter-form .email {
+  height: 24px;
+  width: 640px;
+  padding: 20px;
+  font-size: 20px;
+  /* border: 1px solid #e55473; */
+  color: #e55473;
+}
+
+.news-letter .container .content .letter-form .email:focus {
+  border: 1px solid #e55473;
+  outline: 2px solid #e55473;
+  outline-offset: -2px;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgba(17, 16, 16, 1);
+}
+
+footer .content {
+  padding: 128px 0;
+}
+
+footer .content .section-heading,
+footer .content .section-pera {
+  color: #fff;
+}
+
+footer .content .all-rights {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
